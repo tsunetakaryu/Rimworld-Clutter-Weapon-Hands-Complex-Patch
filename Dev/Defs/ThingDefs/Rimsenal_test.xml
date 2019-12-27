@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <!-- (x,y,z)
+	x(horizontal)
+	y(altitude layer,0 is weapon texture layer, lower numbers are under weapon texures, higher value than 0 is over weapon texture)
+	z(vertical)-->
+<Defs>
+  <WHands.ClutterHandsTDef>
+    <defName>ClutterHandsSettings</defName>
+      <label>Weapon comp loader</label>
+        <thingClass>Thing</thingClass>
+          <WeaponCompLoader>
+            <!-->Federation, dual-hand<-->
+            <li>
+              <MainHand>(-0.3, 0.3, -0.05)</MainHand>
+              <SecHand>(0.2, 0, -0.05)</SecHand>
+              <ThingTargets>
+                <li>AD_Pacificator</li>
+                <li>AD_Arbiter</li>
+                <li>AD_Intercessor</li>
+                <li>AD_Axiom</li>
+                <li>AD_CrucibleCarbine</li>
+                <li>AD_Verdict</li>
+                <li>ADOriginal_Pacificator</li>
+                <li>ADOriginal_Arbiter</li>
+                <li>ADOriginal_Intercessor</li>
+                <li>ADOriginal_Axiom</li>
+                <li>ADOriginal_Verdict</li>
+                <li>Gun_MCrucibleRifle</li>
+                <li>AD_PlasmaBombard</li>
+                <li>AD_CrucibleCannon</li>
+              </ThingTargets>
+            </li>
+            <!-->Federation, one-hand<-->
+            <li>
+              <MainHand>(-0.3, 0.3, -0.05)</MainHand>
+              <ThingTargets>
+                <li>AD_Negotiator</li>
+                <li>AD_Repose</li>
+                <li>ADOriginal_Negotiator</li>
+                <li>AD_PBomb</li>
+                <li>AD_EMB</li>
+                <li>AD_AuxPistol</li>
+              </ThingTargets>
+            </li>
+          </WeaponCompLoader>
+        </WHands.ClutterHandsTDef>
+	<WHands.DefLoader_Extension>
+	   <defName>ClutterHandsCompLoader_Extension</defName>
+	</WHands.DefLoader_Extension>
+</Defs>
